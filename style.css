@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    background-color: darkblue;
+    color: blanchedalmond;
+    font-size: 4rem;
+    height: 6rem;
+    line-height: 6rem;
+}
+
+#fig{
+    width: 14rem;
+    height: 14rem;
+    line-height: 14rem;
+    margin-top: 3rem;
+    margin-left:38rem ;
+    font-size: 4rem;
+    transform-style: preserve-3d;
+    background-color: goldenrod;
+    border-radius: 50%;
+    border: 1px solid black;
+    animation: flipTail 1s ease-in-out ;
+}
+
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+@keyframes flipHead {
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes flipTail {
+    0%{
+        transform: rotateY(180deg);
+    }
+    50%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(180deg);
+    }
+}
+
+#choice{
+    height: 4rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.coin{
+    font-size: 3rem;
+    height: 4rem;
+    width: 8rem;
+}
+
+#score-board{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 5rem;
+}
+
+#user,#bot{
+    font-size: 4rem;
+}
+
+#msg{
+    margin-top: 3rem;
+    background-color: purple;
+    color: aliceblue;
+    font-size: 3rem;
+    padding: 2rem;
+    display: inline;
+    border-radius: 1rem;
+}
