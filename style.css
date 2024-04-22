@@ -12,6 +12,16 @@ h1{
     line-height: 6rem;
 }
 
+#theme{
+    position: fixed;
+    top: 0rem;
+    right: 0rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+
+}
+
 #fig{
     width: 14rem;
     height: 14rem;
@@ -21,7 +31,7 @@ h1{
     margin: 3rem auto;
     font-size: 4rem;
     transform-style: preserve-3d;
-    background-color: goldenrod;
+    background-image: radial-gradient(goldenrod,yellow);
     border-radius: 50%;
     border: 1px solid black;
     animation: flipTail 1s ease-in-out ;
@@ -40,6 +50,14 @@ h1{
     height: 100%;
     backface-visibility: hidden;
     transform: rotateY(180deg);
+}
+
+@keyframes flip {
+    0%{
+        transform: rotateY(0deg);
+    }100%{
+        transform: rotateY(0deg);
+    }
 }
 
 @keyframes flipHead {
